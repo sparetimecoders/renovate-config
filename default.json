@@ -31,6 +31,8 @@
       "token": "{{ secrets.RENOVATE_GITHUB_TOKEN }}"
     }
   ],
+  "npmrc": "@sparetimecoders:registry=https://npm.pkg.github.com\n//npm.pkg.github.com/:_authToken={{ secrets.RENOVATE_GITHUB_TOKEN }}",
+  "npmrcMerge": true,
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["security"]
