@@ -24,6 +24,13 @@
   "pre-commit": {
     "enabled": true
   },
+  "hostRules": [
+    {
+      "matchHost": "npm.pkg.github.com",
+      "hostType": "npm",
+      "token": "{{ secrets.RENOVATE_GITHUB_TOKEN }}"
+    }
+  ],
   "vulnerabilityAlerts": {
     "enabled": true,
     "labels": ["security"]
